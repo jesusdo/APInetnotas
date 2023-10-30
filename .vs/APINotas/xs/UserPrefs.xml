@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{51289129-347B-4B87-A48B-46DDE289C51C}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.APINotas PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NotesContext.cs">
+    <Files>
+      <File FileName="Controllers/NoteController.cs" Line="1" Column="1" />
+      <File FileName="Services/NoteService.cs" Line="1" Column="1" />
+      <File FileName="NotesContext.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="APINotas" expanded="True">
+            <Node name="APINotas" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="NotesContext.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
