@@ -17,21 +17,27 @@ public class NoteController : ControllerBase{
         return Ok(noteService.Get());
     }
 
+    [HttpGet("{id:Guid}")]
+    public async Task<IActionResult> Get(Guid id)
+    {
+        return Ok(await noteService.GetById(id));
+    }
+
     [HttpPost]
     public async Task<IActionResult> Post([FromBody] Note note){
         await noteService.Save(note);
-        return Ok("Insert was success");
+        return Ok();
     }
 
     [HttpPut]
     public async Task<IActionResult> Put(Guid id, [FromBody] Note note){
         await noteService.Update(id, note);
-        return Ok("Update was success");
+        return Ok();
     }
 
     [HttpDelete]
     public async Task<IActionResult> Delete(Guid id){
         await noteService.Delete(id);
-        return Ok("Delete was success");
+        return Ok();
     }
 }

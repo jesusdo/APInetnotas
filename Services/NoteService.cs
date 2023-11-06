@@ -1,4 +1,5 @@
 using APINotas.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace APINotas.Services;
 
@@ -11,6 +12,13 @@ public class NoteService: INoteService{
 
     public IEnumerable<Note> Get(){
         return context.Notes;
+    }
+
+    public async Task<Note> GetById(Guid id)
+    {
+        var noteActual = context.Notes.Find(id);
+
+        return noteActual;
     }
 
     public async Task<Note> Save(Note note){
@@ -41,8 +49,11 @@ public class NoteService: INoteService{
     }
 }
 
-public interface INoteService{
+public interface INoteService {
     public IEnumerable<Note> Get();
+
+
+    Task<Note> GetById(Guid id);
 
     Task<Note> Save(Note note);
 
